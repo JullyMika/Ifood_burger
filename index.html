@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style/style.css">
+    <title>Ifood Burger</title>
+
+</head>
+<body>
+
+    <header id="cabecalho">
+        <div class="container">
+            <h2 class="logo__titulo">Ifood <span>•</span> Burger</h2>
+
+            <nav class="cabecalho__menu">
+                <a class="cabecalho__menu__links" href="#">Início</a>
+                <a class="cabecalho__menu__links" href="#">Burgers</a>
+                <a class="cabecalho__menu__links" href="#">Contato</a>
+            </nav>
+
+            <div id="funcionamento" class="funcionamentoA funcionamentoF">Segunda á Domingo-13h as 23h</div>
+        </div>
+    </header>
+
+    <section id="section-one">
+        <div class="lado__esquerdo">
+            <div class="section-one__esquerdo">
+                <h1> O Hamburguer <br> mais delicioso.</h1>
+                <div class="emoji">😋</div>
+            </div>
+            <p> A primeira hamburgueria virtual que você faz o <br> pedido online e come o burger através do <br> computador.</p>
+            <button>Fazer Pedido</button>
+        </div>
+        <div class="lado__direito">
+            <img src="./src/IMAGES-BURGER/Burger-principal.png" alt="Hamburguer delicioso gigante.">
+        </div>
+    </section>
+
+    <section id="section-two">
+        <h2>Pesquise o seu <br> Hamburguer favorito!</h2>
+        <div class="section__two__inputs">
+            <input class="inputs__1 lupa" type="search" placeholder="Digite o nome do Burguer">
+
+            <select class="inputs__2 categoria">
+                <option>selecionar categoria</option>
+            </select>
+        </div>
+    </section>
+
+    <main id="principal">
+        <section class="principal__products">
+            <a class="products__item" href="#">
+                <div class="promocao">Promoção</div>
+                <img class="products_image" src="./src/IMAGES-BURGER/burger1.png" alt="Primeiro Hamburguer">
+                <div class="infor">
+                    <span class="products__category" >Tradicional</span>
+                    <span class="products__name" >Texas Burger</span>
+                    <span class="products__price" >R$ 25.50</span>
+
+                <button
+                    class="pedidoBurger"
+                    onclick="pedido(event)"
+                    data-name="Texas Burger"
+                    data-price="25.50"
+                >
+                <span>Add</span>
+                </button>
+
+                </div>
+            </a>
+
+            <a class="products__item" href="#">
+                <img class="products_image" src="./src/IMAGES-BURGER/burger2.png" alt="Segundo Hamburguer">
+                <div class="infor">
+                    <span class="products__category" >Artesanal</span>
+                    <span class="products__name" >Busan Burger</span>
+                    <span class="products__price" >R$ 30.00</span>
+
+                <button
+                    class="pedidoBurger"
+                    onclick="pedido(event)"
+                    data-name="Busan Burger"
+                    data-price="30.00"
+                >
+                <span>Add</span>
+                </button>
+
+                </div>
+            </a>
+
+            <a class="products__item" href="#">
+                <img class="products_image" src="./src/IMAGES-BURGER/burger3.png" alt="Terceiro Hamburguer">
+                <div class="infor">
+                    <span class="products__category" >X-burger</span>
+                    <span class="products__name" >Ulsan Burger</span>
+                    <span class="products__price" >R$ 40.00</span>
+
+                <button
+                    class="pedidoBurger"
+                    onclick="pedido(event)"
+                    data-name="Ulsan Burger"
+                    data-price="40.00"
+                >
+                <span>Add</span>
+                </button>
+
+                </div>
+            </a>
+
+            <a class="products__item" href="#">
+                <img class="products_image" src="./src/IMAGES-BURGER/burger4.png" alt="Quarto Hamburguer">
+                <div class="infor">
+                    <span class="products__category" >Vegetariano</span>
+                    <span class="products__name" >Hawaii Burger</span>
+                    <span class="products__price" >R$ 40.00</span>
+
+                <button
+                    class="pedidoBurger"
+                    onclick="pedido(event)"
+                    data-name="Hawaii Burger"
+                    data-price="40.00"
+                >
+                <span>Add</span>
+                </button>
+
+                </div>
+            </a>
+
+            <a class="products__item" href="#">
+                <img class="products_image" src="./src/IMAGES-BURGER/burger1.png" alt="Primeiro Hamburguer">
+                <div class="infor">
+                    <span class="products__category" >Dupla Carne</span>
+                    <span class="products__name" >NY Burger</span>
+                    <span class="products__price" >R$ 35.00</span>
+
+                <button
+                    class="pedidoBurger"
+                    onclick="pedido(event)"
+                    data-name="NY Burger"
+                    data-price="35.00"
+                >
+                <span>Add</span>
+                </button>
+
+                </div>
+            </a>
+
+            <a class="products__item" href="#">
+                <img class="products_image" src="./src/IMAGES-BURGER/burger2.png" alt="Primeiro Hamburguer">
+                <div class="infor">
+                    <span class="products__category" >Chicken Burger</span>
+                    <span class="products__name" >Bangkok Burger</span>
+                    <span class="products__price" >R$ 20.00</span>
+
+                <button
+                    class="pedidoBurger"
+                    onclick="pedido(event)"
+                    data-name="Bangkok Burger"
+                    data-price="20.00"
+                >
+                <span>Add</span>
+                </button>
+
+                </div>
+            </a>
+
+        </section>
+
+    </main>
+
+    <section id="modal">
+        <div class="modal__container">
+            <h2>Seu carrinho</h2>
+            <div class="modal__conteudo">
+                <div class="modal__conteudo__container">
+
+                </div>
+            </div>
+            <p class="total__pagar" style="font-size: 1.3rem; font-weight: bold; margin: 20px auto;">
+                Total a pagar:
+                <span class="total">0.00</span>
+            </p>
+            <h3 class="endereco">Endereço</h3>
+            <input class="endereco__campo" type="text" placeholder="Informe seu endereço...">
+            <div class="finalizar">
+                <div class="finalizarFechar">Fechar</div>
+
+                <button>Finalizar Pedido</button>
+            </div>
+        </div>
+    </section>
+
+    <footer id="rodape">
+        <h2 class="rodape__h2">Ifood <span>•</span> Burger</h2>
+        <p class="rodape__p">powered by NicollyJully.</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
